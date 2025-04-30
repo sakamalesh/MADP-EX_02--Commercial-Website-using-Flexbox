@@ -1,0 +1,121 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your E-commerce Store</title>
+        <meta name="description" content="Your online store for amazing products.">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo"><a href="/">Shatu</a></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/cart" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Unique Products Online</h1>
+                <p>Shop our curated selection of high-quality goods and find something you'll love.</p>
+                <a href="#products" class="button primary">Browse Products</a>
+            </div>
+        </section>
+
+        <main class="content-wrapper">
+            <section id="products" class="section">
+                <div class="container">
+                    <h2>Featured Products</h2>
+                    <div class="products-grid">
+                        <div class="product-card" data-id="1">
+                            <img src="img1.jpeg" alt="Product 1">
+                            <h3>Awesome Gadget</h3>
+                            <p class="price">$29.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-id="2">
+                            <img src="img2.jpeg" alt="Product 2">
+                            <h3>Stylish Accessory</h3>
+                            <p class="price">$19.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-id="3">
+                            <img src="img3.jpeg " alt="Product 3">
+                            <h3>Comfortable Item</h3>
+                            <p class="price">$39.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+            </section>
+
+            <section id="about" class="section bg-light">
+                <div class="container">
+                    <h2>About Our Store</h2>
+                    <p>Welcome to Your Shatu! We are passionate about providing [mention your niche or product type] to our valued customers. Our mission is to offer high-quality products with excellent customer service.</p>
+                    <p>We believe in [mention your core values, e.g., sustainability, innovation, affordability]. Our team is dedicated to ensuring a seamless and enjoyable shopping experience for you.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <p>Have questions or need assistance? Reach out to our team.</p>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="button primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">Shatu</div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Shatu. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
